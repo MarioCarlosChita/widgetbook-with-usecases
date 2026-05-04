@@ -13,9 +13,7 @@ jobs:
   print-tag:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-
+      
       - name: "Print the key"
         run:  |
           echo "DART_VERSION está definido? ${{ secrets.DART_VERSION != '' }}"
