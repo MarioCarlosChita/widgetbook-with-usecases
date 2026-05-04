@@ -13,7 +13,13 @@ jobs:
   print-tag:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Deploying the code"
+      - name: "Print the key"
+        run:  |
+          echo "Dart Version: $DART_VERSION"
+          echo "App Name: $APP_NAME"
+        env:
+          DART_VERSION: ${{secrets.DART_VERSION}}
+          APP_NAME: ${{vars.APP_NAME}}
       
  
  
