@@ -5,6 +5,8 @@ import 'package:widgetbook/widgetbook.dart';
 void main() => runApp(MainApp());
 
 class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
@@ -36,7 +38,7 @@ class MainApp extends StatelessWidget {
                   max: 10,
                   initialValue: 5,
                 );
-                final CardData card = new CardData(
+                final CardData card =  CardData(
                   title: title,
                   subTitle: subTitle,
                   description: description,

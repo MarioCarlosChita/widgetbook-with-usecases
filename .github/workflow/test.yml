@@ -1,0 +1,20 @@
+name: Test and Deploy the app
+
+on: 
+  workflow_dispatch:
+  push: 
+    branches:
+      - main 
+  pull_request:
+    branches:
+      - main 
+
+jobs:
+  print-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying the code"
+      
+ 
+ 
+  
