@@ -13,13 +13,14 @@ jobs:
   print-tag:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
       - name: "Print the key"
         run:  |
-          echo "Dart Version: $DART_VERSION"
-          echo "App Name: $APP_NAME"
-        env:
-          DART_VERSION: ${{secrets.DART_VERSION}}
-          APP_NAME: ${{vars.APP_NAME}}
+          echo "Dart Version: ${{ secrets.DART_VERSION }}"
+          echo "App Name: ${{ vars.APP_NAME }}"
+         
       
  
  
