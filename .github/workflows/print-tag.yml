@@ -17,9 +17,10 @@ jobs:
       - name: "Print the key"
         run:  |
           echo "DART_VERSION: $DART_VERSION"
-          echo "APP_NAME está definido? ${{ vars.APP_NAME != '' }}"
+          echo "APP_NAME: $APP_NAME"
         env:
           DART_VERSION: ${{ secrets.DART_VERSION }}
+          APP_NAME: ${{ vars.APP_NAME }}
          
       
  
