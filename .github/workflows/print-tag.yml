@@ -18,8 +18,8 @@ jobs:
 
       - name: "Print the key"
         run:  |
-          echo "Dart Version: ${{ secrets.DART_VERSION }}"
-          echo "App Name: ${{ vars.APP_NAME }}"
+          echo "DART_VERSION está definido? ${{ secrets.DART_VERSION != '' }}"
+          echo "APP_NAME está definido? ${{ vars.APP_NAME != '' }}"
          
       
  
