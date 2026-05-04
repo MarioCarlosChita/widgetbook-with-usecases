@@ -18,8 +18,8 @@ jobs:
           echo "Dart Version: $DART_VERSION"
           echo "App Name: $APP_NAME"
         env:
-          DART_VERSION: ${{secrets.DART_VERSION}}
-          APP_NAME: ${{vars.APP_NAME}}
+          DART_VERSION: ${{ secrets.DART_VERSION }}
+          APP_NAME: ${{ vars.APP_NAME }}
       
  
  
